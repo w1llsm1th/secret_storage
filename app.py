@@ -6,7 +6,7 @@ from flask import Flask, request, session, redirect, url_for, render_template
 
 app = Flask(__name__)
 
-github_addr = 'https://github.com/bruc3w1ll1s/secret_storage'
+github_addr = 'https://github.com/w1llsm1th/secret_storage'
 
 with open('config.json', 'r') as json_data:
     config = json.load(json_data)
