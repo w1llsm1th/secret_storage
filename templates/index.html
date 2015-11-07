@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title> Verification page </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <br><br><br>
+    <center>
+        <div style="width: 400px">
+            {% if err %}
+                <p class='bg-danger'> {{ err }} </p>
+            {% endif %}
+            {% if success %}
+                <p class='bg-success'> {{ success }}
+            {% endif %}
+            <h1>Login to proceed</h1>
+            <form action='/index' method='post'>
+                Login: <input type='text' name='username'> <br><br>
+                Password: <input type='password' name='password'> <br><br>
+                <button type='submit' value='Login'>Login</button> <br>
+                <!-- <a href='/recover'> Forgot your password? </a> -->
+            </form>
+        </div>
+    </center>
+</body>
+</html>

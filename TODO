@@ -1,0 +1,6 @@
+
+0. Learn Python2.7 and Flask (+)
+1. Write interface for application to store secret infomation (+)
+2. Write backup recovery mechanism (+/-)
+3. Change security_key before deploying the application (-)
+
